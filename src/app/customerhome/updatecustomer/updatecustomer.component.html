@@ -1,0 +1,69 @@
+<div class="container data">
+    <form #frm="ngForm" action="" class="form-box" (ngSubmit)="submit()">
+      <h1>Customer details</h1>
+      <br />
+      <p>Customer name</p>
+      <input
+        type="text"
+        name="customer.customerName"
+        class="field"
+        required
+        placeholder="enter the Customer name"
+        [(ngModel)]="customer.customerName"
+  
+      />
+      <p>User Name</p>
+      <input
+        type="text"
+        name="customer.user.userName"
+        class="field"
+        required
+        placeholder="enter the Username"
+        [(ngModel)]="customer.user.userName"
+  
+      />
+  
+   
+  
+      <p>Email</p>
+      <input
+        type="text"
+        name="customer.customerEmail"
+        class="field"
+        required
+        placeholder="enter the Customer Email"
+        [(ngModel)]="customer.customerEmail"
+  
+      />
+  
+      <p>Mobile</p>
+      <input
+        type="number"
+        name="customer.customerMobile"
+        class="field"
+        required
+        placeholder="enter the Mobile number"
+        [(ngModel)]="customer.customerMobile"
+  
+      />
+
+      <p>Customer Address</p>
+      <input
+        type="text"
+        name="customer.customerAddress"
+        class="field"
+        required
+        placeholder="enter the address"
+        [(ngModel)]="customer.customerAddress"
+  
+      />
+  
+      <input
+        [disabled]="frm.invalid"
+        type="submit"
+        class="w-80 btn btn-md btn-success"
+        value="Update"
+      />
+  
+    </form>
+  </div>
