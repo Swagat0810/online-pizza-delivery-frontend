@@ -1,0 +1,101 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: 30px;
+    background-color: brown;
+    text-align: center;
+    color: bisque;
+}
+
+.nav-item{
+
+    background-color:burlywood;
+    
+    margin-left: 30px;
+    width: 150px;
+    text-align: center;
+    font-display: center;
+    font-family: 'Oswald', sans-serif;
+     text-shadow: 3px 1px #c2bbbb;
+     font-weight: bolder;
+}
+.nav-link{
+    color:whitesmoke;
+    font-size: large;
+    font-stretch: expanded;
+    font-family: 'Oswald', sans-serif; 
+    
+    font-weight: bolder;
+}
+
+.nav-item1{
+    margin-top: 20px;
+    background-color: grey;
+    width:240px;
+    color: rgb(0, 255, 8);
+    height: 80px;
+    margin-left: 50px;
+   
+}
+a{
+    color: antiquewhite;
+    font-size:larger;
+}
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	
+	background-size: flex;
+}
+section .contentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	 background-image: url('qq.jpg'); 
+
+}
+
+section .imgBx{
+	position: relative;
+	width: 50%;
+	height: 100%;
+}
+section .imgBx:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: linear-gradient(225deg,#e91e63,#03a9f4);*/
+	z-index: 1;
+	mix-blend-mode: screen;
+}
+section .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section .formBx{
+	width: 50%;
+	
+	background-color: maroon;
+	border-radius: 5%;
+	
+}
+section .contentBx .formBx .inputBx{
+    margin-right: 100px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}

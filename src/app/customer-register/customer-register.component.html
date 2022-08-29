@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-sm  " style="background-color:rgb(204, 58, 58);height:50px">
+    
+</nav>
+
+<section>
+
+    <div class="imgBx">
+        <img src="assets/img/plogo.jpg">
+    </div>
+
+<div class="contentBx">
+<div class="formBx">
+<h2> Customer Register Here</h2>
+<form (ngSubmit)="onSubmit()">
+
+    <div class="inputBx">
+        <label>Customer Name</label>
+        <input type="text" class="form-control" id="customerName"
+        [(ngModel)]="customer.customerName" name="customerName">
+    </div>
+
+    <div class="inputBx">
+        <label>Email</label>
+        <input type="text" class="form-control" id="customerEmail"
+        [(ngModel)]="customer.customerEmail" name="customerEmail">
+    </div>
+
+    <div class="inputBx">
+        <label>Mobile number</label>
+        <input type="phone" class="form-control" id="customerMobile"
+        [(ngModel)]="customer.customerMobile" name="customerMobile">
+    </div>
+
+    <div class="inputBx">
+        <label>Address</label>
+        <input type="text" class="form-control" id="customerAddress"
+        [(ngModel)]="customer.customerAddress" name="customerAddress">
+    </div>
+
+    <div class="inputBx">
+        <label>UserName</label>
+        <input type="text" class="form-control" id="userName"
+        [(ngModel)]="customer.user.userName" name="userName">
+    </div>
+
+    <div class="inputBx">
+        <label>Password</label>
+        <input type="text" class="form-control" id="userPassword"
+        [(ngModel)]="customer.user.userPassword" name="userPassword">
+    </div>
+    <div class="inputBx">
+    <button class="btn btn-success" type="submit">Submit</button>
+    </div>
+</form>
+</div>
+</div>
+</section>
+

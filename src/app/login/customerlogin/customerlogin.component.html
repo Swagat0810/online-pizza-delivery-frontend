@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-sm  " style="background-color:rgb(204, 58, 58);height: 50px;">
+
+</nav>
+
+<section>
+    <div class="imgBx">
+        <img src="assets/img/plogo.jpg">
+    </div>
+<div class="contentBx">
+<div class="formBx">
+<h2> Customer Login</h2>
+<form (ngSubmit)="onCustomerLogin()">
+
+    <div class="inputBx">
+        <label>User Name</label>
+        <input type="text" class="form-control" id="userName"
+        [(ngModel)]="user.userName" name="userName">
+    </div>
+
+    <div class="inputBx">
+        <label>User Password</label>
+        <input type="text" class="form-control" id="userPassword"
+        [(ngModel)]="user.userPassword" name="userPassword">
+    </div>
+    <div class="inputBx">
+    <button class="btn btn-success" type="submit">Login</button>
+    </div>
+</form>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <span>Online Pizza Booking Application @2022 </span>
+    </div>
+</footer> 
