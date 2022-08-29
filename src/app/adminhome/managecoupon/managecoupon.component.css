@@ -1,0 +1,8 @@
+.entire{
+    position: fixed;
+    width: 100%;
+    height:100%;
+  background-image:url('../../../assets/img/vv.jpg');
+    background-image:image-set();
+    background-size: cover;
+}

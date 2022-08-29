@@ -1,0 +1,32 @@
+<p style="margin-left: 500px;
+font-weight: bolder;
+font-size: 30px;
+color: rgb(229, 17, 17);
+font-family: 'Oswald', sans-serif;
+text-shadow: 3px 1px #c2bbbb;"><br>Customer List</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            
+            
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers">
+            <td>{{customer.customerName}}</td>
+            <td>{{customer.customerEmail}}</td>
+            <td>{{customer.customerMobile}}</td>
+            <td>{{customer.customerAddress}}</td>
+
+            <td>
+                <button (click)="deleteCustomer(customer.customerId)" class="btn btn-danger" style="margin-left: 10px">Remove</button> 
+            </td>
+        </tr>
+    </tbody>
+</table>

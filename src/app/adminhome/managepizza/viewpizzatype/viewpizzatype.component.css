@@ -1,0 +1,39 @@
+*{
+    text-align: center;
+ }
+ h1{
+     
+     text-align:center;
+     font-weight: bolder;
+     font-size: 30px;
+     color: rgb(229, 17, 17);
+     font-family: 'Oswald', sans-serif;
+     text-shadow: 3px 1px #c2bbbb;
+ }
+ 
+ h3{
+     
+     font-weight: bolder;
+     font-size: 20px;
+     color: rgb(0, 0, 0);
+    
+     text-shadow: 3px 1px #c2bbbb;
+ }
+ select{
+     width: 20%;
+     border-radius: 5px;
+     background: goldenrod;
+     color: black;
+     font-family: 'PT Sans Narrow', sans-serif;
+     
+ }
+ 
+     
+ button{
+     background: red;
+     border: none;
+     border-radius: 5px;
+ }
+ button:hover{
+     background: darkred;
+ }

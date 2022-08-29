@@ -1,0 +1,30 @@
+<p style="margin-left: 500px;
+font-weight: bolder;
+font-size: 30px;
+color: rgb(229, 17, 17);
+font-family: 'Oswald', sans-serif;
+text-shadow: 3px 1px #c2bbbb;"><br>Coupon List</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            
+            <th>Coupon Name</th>
+            <th>Coupon Description</th>
+            <th>Coupon Type</th>
+            <th>Coupon Cost</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let coupon of coupons">
+            <td>{{coupon.coupanName}}</td>
+            <td>{{coupon.coupanDescription}}</td>
+            <td>{{coupon.coupanType}}</td>
+            <td>Rs. {{coupon.coupanCost}}</td>
+            
+            <td><button (click)="updateCoupon(coupon)" class="btn btn-info">Update</button>
+                <button (click)="deleteCoupon(coupon.coupanId)" class="btn btn-danger" style="margin-left: 10px">Delete</button> 
+            </td>
+        </tr>
+    </tbody>
+</table>

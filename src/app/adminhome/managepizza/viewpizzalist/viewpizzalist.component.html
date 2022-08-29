@@ -1,0 +1,29 @@
+<p style="margin-left: 500px;
+font-weight: bolder;
+font-size: 30px;
+color: rgb(229, 17, 17);
+font-family: 'Oswald', sans-serif;
+text-shadow: 3px 1px #c2bbbb;"><br>Pizza List</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            
+            <th>Pizza Name</th>
+            <th>Pizza Type</th>
+            <th>Pizza Description</th>
+            <th>Pizza Cost</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pizza of pizzas">
+            <td>{{pizza.pizzaName}}</td>
+            <td>{{pizza.pizzaType}}</td>
+            <td>{{pizza.pizzaDescription}}</td>
+            <td>{{pizza.pizzaCost}}</td>
+            <td><button (click)="updatePizza(pizza)" class="btn btn-info">Update</button>
+                <button (click)="deletePizza(pizza.pizzaId)" class="btn btn-danger" style="margin-left: 10px">Delete</button> 
+            </td>
+        </tr>
+    </tbody>
+</table>

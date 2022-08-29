@@ -1,0 +1,48 @@
+<form>
+    <br><br>
+    <h1>VIEW ANY PIZZA TYPE</h1>
+    <br>
+    
+    <select name="pizzaType"  id="pizzatype" [(ngModel)]="pizzaType">
+  
+          <option value="veg">Veg</option>
+          <option value="non-veg">Non-Veg</option>
+    </select>
+    <br><br>
+    <button type="submit" class="btn btn-primary" (click)="fetchData()">Next</button>
+    
+  </form>
+  <br>
+  <!-- <div *ngIf="pizzaType">
+    <ul>
+      <li *ngFor="let pizza of viewPizza"><p>List of Pizza :</p>{{ pizza.pizzaName }} : {{ pizzaType }} , {{pizza.pizzaCost}} </li>
+    </ul>
+  </div> -->
+  <br>
+  <div class='panel panel-primary' *ngIf="pizzaType">     
+    <div class='panel-body'>  
+        <div class='table-responsive'>  
+            <table class='table'>  
+                <thead>  
+                    <tr>  
+                        <th>Pizza's Name</th>  
+                        <th>Pizza Type</th>  
+                        <th>Description</th>  
+                        <th>Cost</th>  
+                    </tr>  
+                </thead>  
+                <tbody>  
+                    <tr *ngFor="let pizza of viewPizza;">  
+                        <td>{{pizza.pizzaName}}</td>  
+                        <td>{{pizza.pizzaType}}</td>  
+                        <td>{{pizza.pizzaDescription}}</td>  
+                        <td>₹ {{pizza.pizzaCost}}</td>  
+                    </tr>  
+                </tbody>  
+            </table>  
+        </div>  
+    </div>  
+  </div> 
+  
+    
+  

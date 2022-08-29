@@ -1,0 +1,65 @@
+<div class="container data">
+    <form #frm="ngForm" action="" class="form-box" (ngSubmit)="submit()">
+      <h1>Update Pizza</h1>
+      <br />
+      <p>Pizza Image</p>
+      <input
+        type="text"
+        name="pizza.pizzaUrl"
+        class="field"
+        placeholder="Put the pizza image"
+        [(ngModel)]="pizza.pizzaUrl"
+      />
+      <p>Pizza name</p>
+      <input
+        type="text"
+        name="pizza.pizzaName"
+        class="field"
+        required
+        placeholder="enter the pizza name"
+        [(ngModel)]="pizza.pizzaName"
+  
+      />
+  
+      <p>Pizza Type</p>
+      <select
+      name="pizza.pizzaType"
+      class="field"
+      [(ngModel)]="pizza.pizzaType">
+      <option value="Veg">Veg</option>
+      <option value="Non-Veg">Non-Veg</option>
+    </select>
+  
+      
+  
+      <p>Description</p>
+      <input
+        type="text"
+        name="pizza.pizzaDescription"
+        class="field"
+        required
+        placeholder="enter the pizza Description"
+        [(ngModel)]="pizza.pizzaDescription"
+  
+      />
+  
+      <p>Price</p>
+      <input
+        type="number"
+        name="pizza.pizzaCost"
+        class="field"
+        required
+        placeholder="enter the pizza price"
+        [(ngModel)]="pizza.pizzaCost"
+  
+      />
+  
+      <input
+        [disabled]="frm.invalid"
+        type="submit"
+        class="w-80 btn btn-md btn-success"
+        value="Update"
+      />
+  
+    </form>
+  </div>

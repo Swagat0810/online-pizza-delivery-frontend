@@ -1,0 +1,59 @@
+<div class="container data">
+    <form #frm="ngForm" action="" class="form-box" (ngSubmit)="submit()">
+      <h1>Coupon details</h1>
+      <br />
+      <p>Coupon name</p>
+      <input
+        type="text"
+        name="coupon.CoupanName"
+        class="field"
+        required
+        placeholder="enter the Coupon name"
+        [(ngModel)]="coupon.coupanName"
+  
+      />
+  
+   
+  
+      <p>Description</p>
+      <input
+        type="text"
+        name="coupon.coupanDescription"
+        class="field"
+        required
+        placeholder="enter the Coupon Description"
+        [(ngModel)]="coupon.coupanDescription"
+  
+      />
+  
+      <p>Coupon Value</p>
+      <input
+        type="number"
+        name="coupon.coupanCost"
+        class="field"
+        required
+        placeholder="enter the Coupon Cost"
+        [(ngModel)]="coupon.coupanCost"
+  
+      />
+
+      <p>Coupon Type</p>
+      <input
+        type="text"
+        name="coupon.CoupanType"
+        class="field"
+        required
+        placeholder="enter the Coupon Type"
+        [(ngModel)]="coupon.coupanType"
+  
+      />
+  
+      <input
+        [disabled]="frm.invalid"
+        type="submit"
+        class="w-80 btn btn-md btn-success"
+        value="Update"
+      />
+  
+    </form>
+  </div>
